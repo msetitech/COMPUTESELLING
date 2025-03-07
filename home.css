@@ -3,12 +3,77 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
 
 nav {
 	background: #026aa2;
 	height: 52px;
 	display: flex;
+	width: 100%;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0px 12%;
+}
+
+.right {
+	display: flex;
 }
 nav ul {
 	display: flex;
+	list-style: none;
+}
+
+nav a {
+	text-decoration: none;
+	color: white;
+	margin-right: 20px;
+}
+
+.cardicon {
+	height: 30px;
+	width: 30px;
+	position: relative;
+	margin-right: 20px;
+	background: #96d2f33f;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 5px;
+	border-radius: 3px;
+}
+
+.cardicon svg {
+	color: #ffffff;
+}
+
+.cartnumber {
+	position: absolute;
+	background: red;
+	color: white;
+	height: 15px;
+	width: 15px;
+	text-align: center;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+	border-radius: 100%;
+	top: -10px;
+	right: -10px;
+	font-size: 12px;
+}
+
+header {
+	display: flex;
+	height: 60vh;
+	background: #026aa238;
+	align-items: center;
+	justify-content: center;
+}
+
+.headertop {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 20px;
 }
